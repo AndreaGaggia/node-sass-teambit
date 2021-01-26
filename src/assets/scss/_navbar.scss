@@ -1,0 +1,36 @@
+nav {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $brown;
+        padding: 1.5rem 0 0.5rem 0.5rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                color: $brown;
+            }
+            li:not(:last-child) {
+                margin-right: 28px;
+            }
+            li:last-child {
+                color: $blue;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: white;
+                    background-color: $blue;
+                    transition: 0.3s;
+                }
+
+                img {
+                    height: 1.5rem;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+$brown: #58402c;
+$blue: #2c4792;
+$sectionBg: #ffe7d2;
+$big_title: 3.3rem;
+$py_section: 70px;
+
+@mixin title {
+    color: $brown;
+    margin-bottom: 15px;
+}
+
+@mixin big-title {
+    @include title;
+    line-height: 5rem;
+    font-size: $big_title;
+    font-weight: 600;
+}
+
+@mixin small-title {
+    @include title;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+}
+
+@mixin btn {
+    padding: 0.75rem 1rem;
+    border: 1px solid $blue;
+    border-radius: 0.3rem;
+}
