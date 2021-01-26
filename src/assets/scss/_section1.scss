@@ -1,0 +1,35 @@
+section.how-works {
+    background-color: $sectionBg;
+    padding: $py_section 0;
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        .card {
+            max-width: 350px;
+            text-align: center;
+
+            img {
+                height: 150px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .problem {
+        text-align: center;
+        border-bottom: 1px solid $brown;
+        padding-bottom: 150px;
+    }
+
+    .solution {
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    img.centered {
+        height: 400px;
+    }
+}

@@ -96,3 +96,33 @@ header p:first-of-type a img {
 header p.use-mail {
   color: #58402c;
 }
+
+section.how-works {
+  background-color: #ffe7d2;
+  padding: 70px 0;
+}
+section.how-works .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+section.how-works .cards .card {
+  max-width: 350px;
+  text-align: center;
+}
+section.how-works .cards .card img {
+  height: 150px;
+  margin-bottom: 30px;
+}
+section.how-works .problem {
+  text-align: center;
+  border-bottom: 1px solid #58402c;
+  padding-bottom: 150px;
+}
+section.how-works .solution {
+  text-align: center;
+  padding-top: 150px;
+}
+section.how-works img.centered {
+  height: 400px;
+}

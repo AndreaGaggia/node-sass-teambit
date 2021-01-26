@@ -65,7 +65,44 @@
                 </div>
             </header>
             <main>
-                <section class="how-works"></section>
+                <section class="how-works">
+                    <div class="container">
+                        <div class="problem">
+                            <h2>
+                                Traditional people processes lead to
+                                disengagement and turnover.
+                            </h2>
+                            <div class="cards">
+                                <div class="card" v-for="card in problemCards">
+                                    <img :src="card.img" alt="" />
+                                    <p>{{card.caption}}</p>
+                                </div>
+                            </div>
+                            <img
+                                class="centered"
+                                src="dist/img/before.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="solution">
+                            <h2>
+                                It doesn't have to be like that. Teambit is a
+                                modern solution that teammates love.
+                            </h2>
+                            <div class="cards">
+                                <div class="card" v-for="card in solutionCards">
+                                    <img :src="card.img" alt="" />
+                                    <p>{{card.caption}}</p>
+                                </div>
+                            </div>
+                            <img
+                                class="centered"
+                                src="dist/img/after.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </section>
                 <section class="process"></section>
                 <section class="get-started"></section>
             </main>
