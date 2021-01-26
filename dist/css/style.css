@@ -101,6 +101,18 @@ section.how-works {
   background-color: #ffe7d2;
   padding: 70px 0;
 }
+section.how-works h2 {
+  color: #58402c;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 60%;
+  margin: 0 auto 60px;
+}
+section.how-works h2.final {
+  text-align: center;
+  margin-bottom: 0;
+}
 section.how-works .cards {
   display: flex;
   justify-content: space-between;
@@ -121,8 +133,59 @@ section.how-works .problem {
 }
 section.how-works .solution {
   text-align: center;
-  padding-top: 150px;
+  padding: 150px 0;
 }
 section.how-works img.centered {
   height: 400px;
+}
+
+section.process {
+  padding: 70px 0;
+}
+section.process .feedback,
+section.process .reviews {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+section.process .surveys,
+section.process .praise {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+section.process .surveys .content,
+section.process .praise .content {
+  align-items: flex-end;
+}
+section.process img {
+  max-width: 50%;
+}
+section.process .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+section.process .content h2 {
+  color: #58402c;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 50%;
+  margin-bottom: 80px;
+}
+section.process .content h3 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #58402c;
+  line-height: 2.8rem;
+  max-width: 50%;
+  margin-bottom: 30px;
+}
+section.process .content a.link {
+  color: #2c4792;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
 }

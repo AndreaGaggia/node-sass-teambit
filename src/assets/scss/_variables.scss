@@ -22,6 +22,13 @@ $py_section: 70px;
     font-size: 1.5rem;
 }
 
+@mixin section-title {
+    color: $brown;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 @mixin btn {
     padding: 0.75rem 1rem;
     border: 1px solid $blue;

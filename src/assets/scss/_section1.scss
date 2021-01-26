@@ -2,6 +2,17 @@ section.how-works {
     background-color: $sectionBg;
     padding: $py_section 0;
 
+    h2 {
+        @include section-title;
+        max-width: 60%;
+        margin: 0 auto 60px;
+    }
+
+    h2.final {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
     .cards {
         display: flex;
         justify-content: space-between;
@@ -26,7 +37,7 @@ section.how-works {
 
     .solution {
         text-align: center;
-        padding-top: 150px;
+        padding: 150px 0;
     }
 
     img.centered {
