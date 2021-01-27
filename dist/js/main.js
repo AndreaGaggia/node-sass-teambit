@@ -29,6 +29,22 @@ var app = new Vue({
     }, {
       img: "dist/img/safe.png",
       caption: "It creates a safe environment for dialog"
+    }],
+    footerLists: [{
+      title: "Product",
+      links: ["Feedback", "Surveys", "Reviews", "Praise", "Slack", "Integration", "Shedule a demo", "Pricing"]
+    }, {
+      title: "About",
+      links: ["Feedback", "Surveys", "Reviews", "Praise"]
+    }, {
+      title: "Connect",
+      links: ["Feedback", "Surveys", "Reviews", "Praise"]
+    }, {
+      title: "Lobs",
+      links: ["Feedback", "Surveys", "Reviews", "Praise"]
+    }, {
+      title: "From the blog",
+      links: ["How to change your company culture: a four-step framework", "How teams can be more productive by killing 8-hour workday", "How to build high performing teams inspired by nature", "View all"]
     }]
   },
   methods: {}

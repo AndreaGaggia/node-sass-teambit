@@ -222,7 +222,26 @@
                     </p>
                 </section>
             </main>
-            <footer></footer>
+            <footer>
+                <div class="container">
+                    <div class="left-content">
+                        <img src="./dist/img/logo-small.svg" alt="" />
+                        <p>
+                            <small>Teambit</small> helps teams create high
+                            performing cultures by making feedback a daily
+                            habit.
+                        </p>
+                    </div>
+                    <div class="lists">
+                        <ul v-for="list in footerLists">
+                            <li class="title">{{list.title}}</li>
+                            <li v-for="link in list.links">
+                                <a href="#">{{link}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

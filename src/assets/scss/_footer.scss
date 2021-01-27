@@ -1,0 +1,49 @@
+footer {
+    padding: $py_section;
+    color: $brown;
+
+    .container {
+        display: flex;
+
+        .left-content {
+            width: 300px;
+            display: flex;
+            align-items: flex-start;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding-right: 60px;
+            line-height: 1.5rem;
+
+            img {
+                margin-right: 10px;
+            }
+
+            small {
+                color: $blue;
+            }
+        }
+
+        .lists {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                flex: 1;
+
+                li {
+                    margin-bottom: 20px;
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                li.title {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

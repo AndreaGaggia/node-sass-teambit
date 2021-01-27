@@ -269,3 +269,44 @@ section.get-started p.use-mail {
   margin-top: 30px;
   color: #58402c;
 }
+
+footer {
+  padding: 70px;
+  color: #58402c;
+}
+footer .container {
+  display: flex;
+}
+footer .container .left-content {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-right: 60px;
+  line-height: 1.5rem;
+}
+footer .container .left-content img {
+  margin-right: 10px;
+}
+footer .container .left-content small {
+  color: #2c4792;
+}
+footer .container .lists {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .lists ul {
+  flex: 1;
+}
+footer .container .lists ul li {
+  margin-bottom: 20px;
+}
+footer .container .lists ul li a:hover {
+  text-decoration: underline;
+}
+footer .container .lists ul li.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
