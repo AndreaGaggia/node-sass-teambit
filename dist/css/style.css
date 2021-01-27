@@ -183,6 +183,7 @@ section.how-works .cards {
 section.how-works .cards .card {
   max-width: 350px;
   text-align: center;
+  color: #58402c;
 }
 section.how-works .cards .card img {
   height: 150px;
