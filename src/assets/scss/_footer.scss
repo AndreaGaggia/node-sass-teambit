@@ -50,17 +50,30 @@ footer {
 
 // on mobile
 @media screen and (max-width: 997px) {
+    footer {
+        padding: 30px 30px 0 30px;
+
+        .container {
+            .lists {
+                justify-content: flex-start;
+
+                ul {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 }
 
 // on tablet
 @media screen and (max-width: 1169px) {
     footer {
-        //general
         .container {
             flex-direction: column;
 
             .left-content {
                 width: 100%;
+                padding-right: 0;
 
                 img {
                     height: 6rem;
@@ -75,6 +88,7 @@ footer {
                     flex-basis: 30%;
                     flex-grow: 0;
                     flex-shrink: 0;
+                    margin-bottom: 30px;
                 }
             }
         }

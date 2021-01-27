@@ -48,7 +48,7 @@ var app = new Vue({
     }]
   },
   methods: {
-    handleScroll: function handleScroll() {
+    navAppear: function navAppear() {
       var nav = this.$refs.nav;
 
       if (window.scrollY > 713) {
@@ -57,10 +57,10 @@ var app = new Vue({
     }
   },
   created: function created() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", this.navAppear);
   },
   destroyed: function destroyed() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", this.navAppear);
   }
 });
 

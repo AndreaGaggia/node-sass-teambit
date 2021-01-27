@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  min-width: 500px;
+}
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -416,12 +420,24 @@ footer .container .lists ul li.title {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 997px) {
+  footer {
+    padding: 30px 30px 0 30px;
+  }
+  footer .container .lists {
+    justify-content: flex-start;
+  }
+  footer .container .lists ul {
+    margin-right: 10px;
+  }
+}
 @media screen and (max-width: 1169px) {
   footer .container {
     flex-direction: column;
   }
   footer .container .left-content {
     width: 100%;
+    padding-right: 0;
   }
   footer .container .left-content img {
     height: 6rem;
@@ -434,5 +450,6 @@ footer .container .lists ul li.title {
     flex-basis: 30%;
     flex-grow: 0;
     flex-shrink: 0;
+    margin-bottom: 30px;
   }
 }
