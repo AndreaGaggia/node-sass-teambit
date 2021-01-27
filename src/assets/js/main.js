@@ -71,9 +71,7 @@ const app = new Vue({
         navAppear() {
             const nav = this.$refs.nav;
             const main = this.$refs.main;
-            // console.log(main.getBoundingClientRect().y);
             const mainTop = Math.floor(main.getBoundingClientRect().y);
-            // console.log(mainTop);
             if (mainTop <= 0) {
                 nav.style =
                     "position: fixed; background-color: white; width: 100%; z-index: 2";
@@ -81,9 +79,6 @@ const app = new Vue({
         },
     },
     created() {
-        window.addEventListener("scroll", this.navAppear);
-    },
-    destroyed() {
         window.addEventListener("scroll", this.navAppear);
     },
 });
