@@ -47,7 +47,21 @@ var app = new Vue({
       links: ["How to change your company culture: a four-step framework", "How teams can be more productive by killing 8-hour workday", "How to build high performing teams inspired by nature", "View all"]
     }]
   },
-  methods: {}
+  methods: {
+    handleScroll: function handleScroll() {
+      var nav = this.$refs.nav;
+
+      if (window.scrollY > 713) {
+        nav.style = "position: fixed; background-color: white; width: 100%; z-index: 2";
+      } else nav.style = "";
+    }
+  },
+  created: function created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed: function destroyed() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
 });
 
 /***/ }),

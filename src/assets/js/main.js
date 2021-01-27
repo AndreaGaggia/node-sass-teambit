@@ -67,5 +67,19 @@ const app = new Vue({
             },
         ],
     },
-    methods: {},
+    methods: {
+        handleScroll() {
+            const nav = this.$refs.nav;
+            if (window.scrollY > 713) {
+                nav.style =
+                    "position: fixed; background-color: white; width: 100%; z-index: 2";
+            } else nav.style = "";
+        },
+    },
+    created() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
 });
