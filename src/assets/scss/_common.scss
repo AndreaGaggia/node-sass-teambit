@@ -9,11 +9,16 @@
     max-width: 1170px;
     margin: auto;
 }
+.container-big {
+    width: 1280px;
+    margin: auto;
+}
 
 a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    transition: 0.3s;
 }
 
 ul {
