@@ -44,3 +44,23 @@ section.how-works {
         height: 400px;
     }
 }
+
+// on mobile
+@media screen and (max-width: 997px) {
+}
+
+// on tablet
+@media screen and (max-width: 1169px) {
+    section.how-works {
+        .cards {
+            flex-direction: column;
+            align-items: center;
+
+            .card {
+                &:not(:last-child) {
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+}

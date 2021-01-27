@@ -33,3 +33,28 @@ nav {
         }
     }
 }
+
+#hamburger {
+    color: black;
+    font-size: 2rem;
+    display: none;
+    &:hover {
+        color: $blue;
+    }
+}
+
+// on mobile
+@media screen and (max-width: 997px) {
+}
+
+// on tablet
+@media screen and (max-width: 1169px) {
+    #hamburger {
+        display: block;
+        margin-right: 8px;
+    }
+
+    nav .container ul {
+        display: none;
+    }
+}

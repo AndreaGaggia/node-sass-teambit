@@ -63,6 +63,25 @@ nav .container ul li:last-child img {
   margin-right: 8px;
 }
 
+#hamburger {
+  color: black;
+  font-size: 2rem;
+  display: none;
+}
+#hamburger:hover {
+  color: #2c4792;
+}
+
+@media screen and (max-width: 1169px) {
+  #hamburger {
+    display: block;
+    margin-right: 8px;
+  }
+
+  nav .container ul {
+    display: none;
+  }
+}
 header {
   padding: 70px 0;
 }
@@ -106,6 +125,32 @@ header p.use-mail {
   color: #58402c;
 }
 
+@media screen and (max-width: 1169px) {
+  header .header-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .header-main img {
+    width: 80%;
+  }
+  header .header-main h1 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  header .header-main h3 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  header p:first-of-type {
+    text-align: center;
+  }
+  header p.use-mail {
+    text-align: center;
+  }
+}
 section.how-works {
   background-color: #ffe7d2;
   padding: 70px 0;
@@ -148,6 +193,15 @@ section.how-works img.centered {
   height: 400px;
 }
 
+@media screen and (max-width: 1169px) {
+  section.how-works .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.how-works .cards .card:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
 section.process {
   padding: 70px 0;
 }
@@ -200,6 +254,43 @@ section.process .content a.link {
   width: 50%;
 }
 
+@media screen and (max-width: 1169px) {
+  section.process .container-big {
+    width: 100%;
+  }
+  section.process .feedback,
+section.process .reviews,
+section.process .surveys,
+section.process .praise {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.process img {
+    max-width: 90%;
+  }
+  section.process .content {
+    align-items: center;
+  }
+  section.process .content h2 {
+    max-width: 90%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+  section.process .content h3 {
+    max-width: 90%;
+    text-align: center;
+    align-self: center;
+  }
+  section.process .content a.link {
+    width: 90%;
+    text-align: center;
+    align-self: center;
+  }
+  section.process .content img {
+    align-self: center;
+  }
+}
 section.get-started {
   text-align: center;
   background-color: #ffe7d2;
@@ -276,6 +367,14 @@ section.get-started p.use-mail {
   color: #58402c;
 }
 
+@media screen and (max-width: 1169px) {
+  section.get-started h2 {
+    width: 60%;
+  }
+  section.get-started .message {
+    width: 80%;
+  }
+}
 footer {
   padding: 70px;
   color: #58402c;
@@ -315,4 +414,25 @@ footer .container .lists ul li.title {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1169px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .left-content {
+    width: 100%;
+  }
+  footer .container .left-content img {
+    height: 6rem;
+    margin-bottom: 30px;
+  }
+  footer .container .lists {
+    flex-wrap: wrap;
+  }
+  footer .container .lists ul {
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }

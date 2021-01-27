@@ -80,3 +80,21 @@ section.get-started {
         color: $brown;
     }
 }
+
+// on mobile
+@media screen and (max-width: 997px) {
+}
+
+// on tablet
+@media screen and (max-width: 1169px) {
+    section.get-started {
+        //general
+        h2 {
+            width: 60%;
+        }
+
+        .message {
+            width: 80%;
+        }
+    }
+}
