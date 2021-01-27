@@ -89,6 +89,10 @@ header p:first-of-type a {
   font-weight: 600;
   background-color: #2c4792;
 }
+header p:first-of-type a:hover {
+  background-color: rgba(44, 71, 146, 0.8);
+  border-color: rgba(44, 71, 146, 0.8);
+}
 header p:first-of-type a img {
   height: 1.5rem;
   vertical-align: bottom;
@@ -188,4 +192,80 @@ section.process .content a.link {
   color: #2c4792;
   font-size: 1.5rem;
   margin-bottom: 40px;
+}
+
+section.get-started {
+  text-align: center;
+  background-color: #ffe7d2;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.get-started h2 {
+  color: #58402c;
+  margin-bottom: 15px;
+  line-height: 5rem;
+  font-size: 3.3rem;
+  font-weight: 600;
+  width: 45%;
+}
+section.get-started .message {
+  background-color: white;
+  padding: 20px;
+  width: 500px;
+  border: 1px solid #2c4792;
+  border-radius: 0.5rem;
+  position: relative;
+}
+section.get-started .message span.quote {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 2rem;
+  color: #2c4792;
+}
+section.get-started .message p {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #58402c;
+}
+section.get-started .message .founders {
+  display: flex;
+  align-items: center;
+}
+section.get-started .message .founders img {
+  margin-right: 30px;
+  height: 70px;
+}
+section.get-started .message .founders span {
+  display: block;
+  text-align: left;
+  color: #58402c;
+}
+section.get-started .message .founders span:first-child {
+  color: #2c4792;
+  font-size: 1.1rem;
+}
+section.get-started p.buttons {
+  color: #58402c;
+  margin-top: 50px;
+}
+section.get-started p.buttons a {
+  color: white;
+  font-weight: 600;
+  background-color: #2c4792;
+}
+section.get-started p.buttons a:hover {
+  background-color: rgba(44, 71, 146, 0.8);
+  border-color: rgba(44, 71, 146, 0.8);
+}
+section.get-started p.buttons a img {
+  height: 1.5rem;
+  vertical-align: bottom;
+}
+section.get-started p.use-mail {
+  margin-top: 30px;
+  color: #58402c;
 }

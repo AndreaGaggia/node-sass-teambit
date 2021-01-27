@@ -1,0 +1,82 @@
+section.get-started {
+    text-align: center;
+    background-color: $sectionBg;
+    padding: $py_section 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        @include big-title;
+        width: 45%;
+    }
+
+    .message {
+        background-color: white;
+        padding: 20px;
+        width: 500px;
+        border: 1px solid $blue;
+        border-radius: 0.5rem;
+        position: relative;
+
+        span.quote {
+            position: absolute;
+            top: -1rem;
+            left: 0;
+            font-size: 2rem;
+            color: $blue;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 1.1rem;
+            color: $brown;
+        }
+
+        .founders {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 30px;
+                height: 70px;
+            }
+
+            span {
+                display: block;
+                text-align: left;
+                color: $brown;
+            }
+            span:first-child {
+                color: $blue;
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    p.buttons {
+        color: $brown;
+        margin-top: 50px;
+
+        a {
+            color: white;
+            font-weight: 600;
+            background-color: $blue;
+            &:hover {
+                background-color: rgba($blue, 0.8);
+                border-color: rgba($blue, 0.8);
+            }
+
+            img {
+                height: 1.5rem;
+                vertical-align: bottom;
+            }
+        }
+    }
+
+    p.use-mail {
+        margin-top: 30px;
+        color: $brown;
+    }
+}

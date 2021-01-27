@@ -25,6 +25,10 @@ header {
             color: white;
             font-weight: 600;
             background-color: $blue;
+            &:hover {
+                background-color: rgba($blue, 0.8);
+                border-color: rgba($blue, 0.8);
+            }
 
             img {
                 height: 1.5rem;
