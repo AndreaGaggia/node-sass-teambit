@@ -70,8 +70,11 @@ const app = new Vue({
     methods: {
         navAppear() {
             const nav = this.$refs.nav;
-
-            if (window.scrollY > 713) {
+            const main = this.$refs.main;
+            // console.log(main.getBoundingClientRect().y);
+            let mainTop = Math.floor(main.getBoundingClientRect().y);
+            // console.log(mainTop);
+            if (mainTop <= 0) {
                 nav.style =
                     "position: fixed; background-color: white; width: 100%; z-index: 2";
             } else nav.style = "";
