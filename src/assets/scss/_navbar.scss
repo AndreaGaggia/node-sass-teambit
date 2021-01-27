@@ -1,4 +1,6 @@
 nav {
+    transition: 0.3s;
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -43,12 +45,8 @@ nav {
     }
 }
 
-// on mobile
-@media screen and (max-width: 997px) {
-}
-
 // on tablet
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 998px) {
     #hamburger {
         display: block;
         margin-right: 8px;

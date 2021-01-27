@@ -42,12 +42,8 @@ header {
     }
 }
 
-// on mobile
-@media screen and (max-width: 997px) {
-}
-
 // on tablet
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 998px) {
     header {
         .header-main {
             flex-direction: column;

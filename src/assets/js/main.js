@@ -72,7 +72,7 @@ const app = new Vue({
             const nav = this.$refs.nav;
             const main = this.$refs.main;
             // console.log(main.getBoundingClientRect().y);
-            let mainTop = Math.floor(main.getBoundingClientRect().y);
+            const mainTop = Math.floor(main.getBoundingClientRect().y);
             // console.log(mainTop);
             if (mainTop <= 0) {
                 nav.style =

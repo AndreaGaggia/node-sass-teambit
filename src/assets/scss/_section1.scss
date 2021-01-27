@@ -45,12 +45,8 @@ section.how-works {
     }
 }
 
-// on mobile
-@media screen and (max-width: 997px) {
-}
-
 // on tablet
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 998px) {
     section.how-works {
         .cards {
             flex-direction: column;

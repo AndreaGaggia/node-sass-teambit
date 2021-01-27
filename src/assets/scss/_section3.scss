@@ -81,12 +81,8 @@ section.get-started {
     }
 }
 
-// on mobile
-@media screen and (max-width: 997px) {
-}
-
 // on tablet
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 998px) {
     section.get-started {
         //general
         h2 {

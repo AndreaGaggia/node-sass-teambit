@@ -49,7 +49,7 @@ footer {
 }
 
 // on mobile
-@media screen and (max-width: 997px) {
+@media screen and (max-width: 500px) {
     footer {
         padding: 30px 30px 0 30px;
 
@@ -66,7 +66,7 @@ footer {
 }
 
 // on tablet
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 998px) {
     footer {
         .container {
             flex-direction: column;
